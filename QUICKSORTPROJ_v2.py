@@ -144,7 +144,7 @@ def partition(l, p, r, randomized = False): # r == len(l) - 1
     i = p - 1
 
     for j in range(p, r):
-        a.update_counter()
+        w.update_counter()
         if l[j] <= x:
             i += 1
             l[i].swap(l[j])
@@ -155,8 +155,9 @@ def partition(l, p, r, randomized = False): # r == len(l) - 1
 # End Algorithm
 
 
-a = MainWindow()
-a.window.mainloop()
+if __name__ == "__main__":
+    w = MainWindow()
+    w.window.mainloop()
 
 
 
